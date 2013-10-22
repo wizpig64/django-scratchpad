@@ -1,0 +1,17 @@
+{% load bootstrap3 %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}Scratchpad{% endblock %}</title>
+    {% bootstrap_css %}
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    {% bootstrap_javascript %}
+</head>
+<body>
+
+<div class="container">
+    <h1>Scratchpad</h1>
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>

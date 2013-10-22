@@ -1,0 +1,5 @@
+# This file is to make git track the static folder, but nothing in it.
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore

@@ -1,0 +1,7 @@
+{% load markdown_deux_tags %}{% load endless %}
+
+{% lazy_paginate note_list %}
+{% for note in note_list %}
+{% include "scratchpad/note_body.html" %}
+{% endfor %}
+{% show_more %}

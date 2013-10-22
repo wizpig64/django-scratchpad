@@ -1,0 +1,15 @@
+{% extends "base.html" %}{% load endless %}
+
+{% block content %}
+
+<div class="endless_page_template">
+    {% include page_template %}
+</div>
+
+{% block js %}
+    {{ block.super }}
+    <script src="{{ STATIC_URL }}endless_pagination/js/endless-pagination.js"></script>
+    <script>$.endlessPaginate();</script>
+{% endblock %}
+
+{% endblock %}
