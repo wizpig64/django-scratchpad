@@ -4,11 +4,10 @@
         {{ note.title }}
     </div>
     <div class="panel-body">
-        {{ note.body|markdown }}
+        {{ note.body|markdown:"trusted" }}
     </div>
     <div class="panel-footer">
         {{ note.author.first_name }} on {{ note.date }}{% if note.is_updated %}, updated on {{ note.date_updated }}{% endif %}
-
         <a href="{{ note.get_absolute_url }}"class="pull-right">#{{ note.pk }}</a>
     </div>
 </div>
