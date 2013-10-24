@@ -194,3 +194,24 @@ MARKDOWN_DEUX_STYLES = {
         "safe_mode": False,
     }
 }
+
+# !!HEROKU USERS!!
+# If you plan on deploying this project to Heroku, you should do these things:
+# - Make a SECRET_KEY and put it in the code below. Don't share it!
+#   - (http://www.miniwebtool.com/django-secret-key-generator/)
+# - Uncomment the block of code below this message. This will:
+#   - Overwrite this repo's SECRET_KEY with yours.
+#   - Tell Django to use Heroku's PostgreSQL database and not my sample one.
+# - After deploying, run this command to set up your initial DB and admin.
+#   - $ heroku run python manage.py syncdb
+# - Set other django settings (DEBUG, ADMINS, TIME_ZONE) as you would normally.
+# Other than that, follow the directions on the Heroku Dev Center for Django:
+# (https://devcenter.heroku.com/articles/getting-started-with-django)
+# Keep your changes in a private branch to conceal private information!
+
+# # UNCOMMENT THIS STUFF IF YOU'RE USING HEROKU:
+# # Parse database configuration from $DATABASE_URL
+# import dj_database_url
+# DATABASES['default'] =  dj_database_url.config()
+# # Make this unique, and don't share it with anybody.
+# SECRET_KEY = '' #<- put your generated key here
