@@ -203,7 +203,7 @@ MARKDOWN_DEUX_STYLES = {
 #   - Overwrite this repo's SECRET_KEY with yours.
 #   - Tell Django to use Heroku's PostgreSQL database and not my sample one.
 # - After deploying, run this command to set up your initial DB and admin.
-#   - $ heroku run python manage.py syncdb
+#   - $ heroku run python project/manage.py syncdb
 # - Set other django settings (DEBUG, ADMINS, TIME_ZONE) as you would normally.
 # Other than that, follow the directions on the Heroku Dev Center for Django:
 # (https://devcenter.heroku.com/articles/getting-started-with-django)
