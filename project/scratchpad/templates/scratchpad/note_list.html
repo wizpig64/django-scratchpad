@@ -1,9 +1,13 @@
 {% extends "base.html" %}{% load endless %}
 
 {% block content %}
+{% if not note_list %}
+<p>There aren't any posts yet! If you're an admin, go visit <a href="{% url 'admin:index' %}">/admin/</a> to start writing.</p>
+{% else %}
 <div class="endless_page_template">
     {% include page_template %}
 </div>
+{% endif %}
 
 {% block js %}
     {{ block.super }}

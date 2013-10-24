@@ -9,7 +9,7 @@
 <body>
 
 <div class="container">
-    <h1>Scratchpad</h1>
+    <h1><small><a href="{% url 'note-endless' %}"><span class="glyphicon glyphicon-home"></span></a></small class="pull-right"> scratchpad <small><a href="{% url 'admin:index' %}"><span class="pull-right glyphicon glyphicon-edit" style="margin-top: 8px;"></span></a></small></h1>
     {% block content %}{% endblock %}
 </div>
 
